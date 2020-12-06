@@ -11,4 +11,6 @@ The main idea here is HOW to setup, run and see results of junit tests.
 ## Expected results
 Expected 3 tests to run. Two should pass and one should fail "on purpose".
 
-To visualize the tests, open ``` ```
+To visualize the tests, open ```<repoPath>/build/reports/tests/test/index.html```
+
+![img.png](test_report.png)
