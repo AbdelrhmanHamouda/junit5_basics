@@ -32,9 +32,9 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.6.0'
 }
 
-test{
-    useJUnitPlatform{
-        includeTags("cat1", "cat2", "CalcTests")
+test {
+    useJUnitPlatform {
+        //includeTags("cat1", "cat2", "CalcTests")
         //excludeTags("cat3", "cat4")
     }
 }
