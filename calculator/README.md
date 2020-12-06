@@ -5,7 +5,7 @@ The main idea here is HOW to setup, run and see results of junit tests.
 
 # How to run
 ```shell
-./gradlew test
+./gradlew clean test
 ```
 
 ## Expected results
