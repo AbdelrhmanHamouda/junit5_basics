@@ -8,7 +8,7 @@ On macOS, use the following command to install "allure". For more info about ins
 ```shell
 brew install allure
 ```
-After this is done, build the project.
+After this is done, build the project...
 ```shell
 ./gradlew clean build
 ```
