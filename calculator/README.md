@@ -52,6 +52,14 @@ Run the following command in your terminal
 allure serve <pathToRepo>/calculator/build/allure-results
 ```
 
+## Visualize the report without needing allure server
+```shell
+allure generate -c build/allure-results -o ./<output-directory-name>
+cd <output-directory-name>
+python3 -m http.server & 
+open -a "Google Chrome"  http://localhost:8000/
+```
+
 ### Generated report overview
 
 The result should be something like this
@@ -76,3 +84,5 @@ dependencies{
 - I got the latest version from this link: ```https://mvnrepository.com/artifact/org.slf4j/slf4j-api```
 - Interesting video to
   watch ```https://examples.javacodegeeks.com/solving-slf4j-failed-load-class-org-slf4j-impl-staticloggerbinder/```
+  
+
