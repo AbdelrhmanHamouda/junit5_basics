@@ -5,9 +5,12 @@ import com.nexthink.mnt.math.TooLargeNumbers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /*
  * @author - Abdelrhman Hamouda
@@ -78,6 +81,42 @@ public class CalculatorTest {
 
         // * Assert
         assertEquals(expectedMessage, exception.getMessage());
+
+    }
+
+    @Test
+    @DisplayName("Test asserts with timeOut for the whole test")
+    // Set a timeout for the test
+    @Timeout(value = 2, unit = TimeUnit.SECONDS)
+    void addTestCase5() {
+
+        // * Setup
+        int number1 = 41000;
+        int number2 = 41000;
+        int expectedSum = 82000;
+
+        // * Act
+        int actualSum = calculator.add(number1, number2);
+        // * Assert
+        assertEquals(expectedSum, actualSum);
+
+    }
+
+    @Test
+    @DisplayName("Test asserts with timeOut")
+        // This test is failing in order to see the difference message
+    void addTestCase6() {
+
+        // * Setup
+        int number1 = 41000;
+        int number2 = 41000;
+        int expectedSum = 82000;
+
+        // * Act
+        // The assertTimeout takes the "duration" as first parameter and "lambda" for the second parameter.
+        int actualSum = assertTimeout(Duration.ofSeconds(1), () -> calculator.add(number1, number2));
+        // * Assert
+        assertEquals(expectedSum, actualSum);
 
     }
 }
