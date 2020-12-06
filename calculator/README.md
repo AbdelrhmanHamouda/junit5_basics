@@ -53,3 +53,4 @@ dependencies{
 ```
 - Hints for the issue were found here: ```https://stackoverflow.com/questions/7421612/slf4j-failed-to-load-class-org-slf4j-impl-staticloggerbinder```
 - I got the latest version from this link: ```https://mvnrepository.com/artifact/org.slf4j/slf4j-api```
+- Interesting video to watch ```https://examples.javacodegeeks.com/solving-slf4j-failed-load-class-org-slf4j-impl-staticloggerbinder/```
