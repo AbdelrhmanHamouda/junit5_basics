@@ -40,3 +40,16 @@ allure serve <pathToRepo>/calculator/build/allure-results
 The result should be something like this
 ![img.png](Allure_overview_page.png)
 ![img.png](Behaviors.png)
+
+### Issues found and solved 
+While running the tests, I was getting an error from slf4j. To solve it, I had to add the below to ```build.gradle```
+```java
+dependencies{
+        ...
+        // Added this line to solve the slf4j error!
+        compile "org.slf4j:slf4j-simple:1.7.30"
+        ...
+        }
+```
+- Hints for the issue were found here: ```https://stackoverflow.com/questions/7421612/slf4j-failed-to-load-class-org-slf4j-impl-staticloggerbinder```
+- I got the latest version from this link: ```https://mvnrepository.com/artifact/org.slf4j/slf4j-api```
