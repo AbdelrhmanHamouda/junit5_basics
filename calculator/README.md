@@ -86,3 +86,5 @@ dependencies{
   watch ```https://examples.javacodegeeks.com/solving-slf4j-failed-load-class-org-slf4j-impl-staticloggerbinder/```
   
 
+# Reference 
+- This video series have been essential to this repo for junit5 https://www.youtube.com/playlist?list=PLq3uEqRnr_2GYMK6_WEYRlT5kyD8qx98M
