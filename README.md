@@ -1,2 +1,6 @@
-# junit5_basics
-A simple repo for practicing the basics of junit 5
+# JAVA junit5 basics
+Exploring what can junit do and how it can be used in integration testing. 
+
+# Topics covered
+- Junit5 tests with gradle based project.
+- Allure reporting framework integration with junit5.
