@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /*
  * @author - Abdelrhman Hamouda
  */
+@Tag("CalcTests")
 public class CalculatorTest {
     Calculator calculator = new Calculator();
 
